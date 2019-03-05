@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "FriendFinder is a full-stack application that takes in results from a user's survey and compares the answers with those from other users. The app will then display the name and picture of the user with the best overall match.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dara-anya/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dara-anya/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/dara-anya/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
