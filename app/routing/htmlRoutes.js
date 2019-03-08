@@ -1,3 +1,4 @@
+var express = require("express");
 module.exports = function(server){
     // Route to home.html
     app.get("/", function(req, res){

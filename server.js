@@ -1,3 +1,5 @@
+
+
 // Dependencies
 // ====================================================================
 var express = require("express");
@@ -24,7 +26,10 @@ app.get('/api/friends', function(req, res){
     res.json(friends); 
 });
 
-//require("/htmlRoutes")(server);
+// Trying to use EXTERNAL ROUTES
+// var http = require("http").Server(app);
+// require("./htmlRoutes")(app);
+
 // Route to home.html
 app.get("/", function(req, res){
     res.sendFile(path.join(__dirname, "app/public/home.html"));
@@ -34,6 +39,15 @@ app.get("/", function(req, res){
 app.get("/survey", function(req, res){
     res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
+
+// Request/POST data to push into friends array
+app.post("/api/friends", function(req, res){
+    var friendInfo = req.body;
+    friends.push(friendInfo);
+});
+
+
+
 
 // Connect server to PORT
 app.listen(PORT, function(){
